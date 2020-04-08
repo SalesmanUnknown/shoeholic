@@ -1,0 +1,634 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header .logo {
+  padding: 30px;
+  font-family: Amiri;
+  font-size: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+header ul > li {
+  list-style: none;
+}
+
+header li {
+  font-family: Montserrat;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  transition: 1s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+header ul > li > a {
+  padding: 30px;
+}
+
+.hero h1 {
+  font-family: Amiri;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.hero p {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.hero {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.display {
+  position: absolute;
+  width: 40%;
+  height: 820px;
+  bottom: 0;
+  right: 30px;
+  background-image: url(./img/hero.png);
+  z-index: -1;
+  background-size: cover;
+}
+
+.block {
+  position: absolute;
+  width: 196px;
+  height: 36px;
+  background-color: #fdb854;
+  opacity: 0.2;
+  top: 55%;
+  left: 0;
+}
+
+.s1 footer {
+  z-index: 1000;
+  height: 27.7vh;
+  width: 70%;
+  display: flex;
+  background-color: #5d5d5a;
+}
+
+.s1 footer .footphoto {
+  width: 299px;
+  height: 27.7vh;
+  background-image: url(./img/hanging.png);
+}
+
+.s1 footer .button {
+  display: flex;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  color: #eee;
+  justify-self: center;
+  text-align: center;
+  margin-left: 34%;
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+.s1 footer .button:hover {
+  opacity: 0.8;
+}
+
+.s2 {
+  min-height: 100vh;
+}
+
+.s2 ul {
+  padding-top: 80px;
+  padding-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  margin-left: 5%;
+}
+
+.s2 li {
+  flex: 1 0 calc(33.333% - 20px);
+  padding-bottom: 20px;
+}
+
+.s2 .text {
+  background-image: url(./img/first.png);
+  width: 381px;
+  height: 364px;
+  transition: 1s ease;
+}
+
+.s2 .text .show {
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.s2 .text:hover {
+  .show {
+    width: 381px;
+    height: 364px;
+    background-color: black;
+    visibility: visible;
+    font-size: 20px;
+    position: relative;
+    z-index: 1000;
+    color: white;
+    font-family: Montserrat;
+    font-size: 30px;
+    opacity: 0.9;
+    cursor: pointer;
+    text-align: center;
+  }
+}
+
+.s2 .text2 {
+  background-image: url(./img/second.png);
+  width: 381px;
+  height: 364px;
+  transition: 1s ease;
+}
+
+.s2 .text3 {
+  background-image: url(./img/third.png);
+  width: 381px;
+  height: 364px;
+  transition: 1s ease;
+}
+
+.s2 .text4 {
+  background-image: url(./img/fourth.png);
+  width: 381px;
+  height: 364px;
+  transition: 1s ease;
+}
+
+.s2 .text5 {
+  background-image: url(./img/fift.png);
+  width: 381px;
+  height: 364px;
+  transition: 1s ease;
+}
+.s2 .text6 {
+  background-image: url(./img/sixth.png);
+  width: 381px;
+  height: 364px;
+  transition: 1s ease;
+  background-size: cover;
+}
+
+.s2 .text2 .show {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease;
+}
+
+.s2 .text2:hover {
+  .show {
+    width: 381px;
+    height: 364px;
+    background-color: black;
+    visibility: visible;
+    font-size: 20px;
+    position: relative;
+    z-index: 1000;
+    color: white;
+    font-family: Montserrat;
+    font-size: 30px;
+    opacity: 0.9;
+    cursor: pointer;
+    text-align: center;
+  }
+}
+
+.s2 .text3 .show {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease;
+}
+
+.s2 .text3:hover {
+  .show {
+    width: 381px;
+    height: 364px;
+    background-color: black;
+    visibility: visible;
+    font-size: 20px;
+    position: relative;
+    z-index: 1000;
+    color: white;
+    font-family: Montserrat;
+    font-size: 30px;
+    opacity: 0.9;
+    cursor: pointer;
+    text-align: center;
+  }
+}
+
+.s2 .text4 .show {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease;
+}
+
+.s2 .text4:hover {
+  .show {
+    width: 381px;
+    height: 364px;
+    background-color: black;
+    visibility: visible;
+    font-size: 20px;
+    position: relative;
+    z-index: 1000;
+    color: white;
+    font-family: Montserrat;
+    font-size: 30px;
+    opacity: 0.9;
+    cursor: pointer;
+    text-align: center;
+  }
+}
+
+.s2 .text5 .show {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease;
+}
+
+.s2 .text5:hover {
+  .show {
+    width: 381px;
+    height: 364px;
+    background-color: black;
+    visibility: visible;
+    font-size: 20px;
+    position: relative;
+    z-index: 1000;
+    color: white;
+    font-family: Montserrat;
+    font-size: 30px;
+    opacity: 0.9;
+    cursor: pointer;
+    text-align: center;
+  }
+}
+
+.s2 .text6 .show {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease;
+}
+
+.s2 .text6:hover {
+  .show {
+    width: 381px;
+    height: 364px;
+    background-color: black;
+    visibility: visible;
+    font-size: 20px;
+    position: relative;
+    z-index: 1000;
+    color: white;
+    font-family: Montserrat;
+    font-size: 30px;
+    opacity: 0.9;
+    cursor: pointer;
+    text-align: center;
+  }
+}
+
+.futr {
+  min-height: 30vh;
+  background-color: #5d5d5a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: Amiri;
+  font-size: 36px;
+  color: #eee;
+}
+
+.futr ul {
+  list-style: none;
+  font-family: Montserrat;
+  font-size: 18px;
+}
+
+.futr .big {
+  font-size: 20px;
+  transition: none;
+}
+
+.futr li {
+  transition: 0.7s ease;
+  cursor: pointer;
+}
+
+.futr li:hover {
+  opacity: 0.7;
+}
+
+.s3 {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.s3 .text {
+  padding-left: 50px;
+}
+
+.s3 .picture {
+  padding-right: 50px;
+}
+
+.s3 h1 {
+  font-size: 36px;
+  font-family: Amiri;
+}
+
+.s3 p {
+  font-family: Montserrat;
+  font-size: 24px;
+  width: 422px;
+}
+
+@media screen and (max-width: 1189px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .s1 .hero {
+    text-align: center;
+  }
+
+  .s1 .display {
+    display: none;
+  }
+
+  .s1 .logo {
+    padding: 0;
+    padding-top: 20px;
+  }
+
+  .s1 header {
+    flex-direction: column;
+  }
+
+  .s1 ul {
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .s1 li {
+    padding-bottom: 10px;
+  }
+
+  .s1 footer .button {
+    margin-left: 0%;
+  }
+
+  .s1 footer {
+    overflow: hidden;
+    width: 100%;
+  }
+  .s1 footer .footphoto {
+    overflow: hidden;
+    width: 50%;
+  }
+
+  .s2 ul {
+    padding-left: 0;
+    margin-left: 0%;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .s2 .text {
+    width: 250px;
+    height: 250px;
+    background-position: top;
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .s2 .text2 {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: top;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .s2 .text3 {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: top;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .s2 .text4 {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: top;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .s2 .text5 {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: top;
+  }
+  .s2 .text6 {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: top;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .s2 .text6:hover {
+    .show {
+      width: 250px;
+      height: 250px;
+      background-color: black;
+      visibility: visible;
+      font-size: 20px;
+      position: relative;
+      z-index: 1000;
+      color: white;
+      font-family: Montserrat;
+      font-size: 30px;
+      opacity: 0.9;
+      cursor: pointer;
+      text-align: center;
+    }
+  }
+  .s2 .text5:hover {
+    .show {
+      width: 250px;
+      height: 250px;
+      background-color: black;
+      visibility: visible;
+      font-size: 20px;
+      position: relative;
+      z-index: 1000;
+      color: white;
+      font-family: Montserrat;
+      font-size: 30px;
+      opacity: 0.9;
+      cursor: pointer;
+      text-align: center;
+    }
+  }
+  .s2 .text4:hover {
+    .show {
+      width: 250px;
+      height: 250px;
+      background-color: black;
+      visibility: visible;
+      font-size: 20px;
+      position: relative;
+      z-index: 1000;
+      color: white;
+      font-family: Montserrat;
+      font-size: 30px;
+      opacity: 0.9;
+      cursor: pointer;
+      text-align: center;
+    }
+  }
+  .s2 .text3:hover {
+    .show {
+      width: 250px;
+      height: 250px;
+      background-color: black;
+      visibility: visible;
+      font-size: 20px;
+      position: relative;
+      z-index: 1000;
+      color: white;
+      font-family: Montserrat;
+      font-size: 30px;
+      opacity: 0.9;
+      cursor: pointer;
+      text-align: center;
+    }
+  }
+  .s2 .text2:hover {
+    .show {
+      width: 250px;
+      height: 250px;
+      background-color: black;
+      visibility: visible;
+      font-size: 20px;
+      position: relative;
+      z-index: 1000;
+      color: white;
+      font-family: Montserrat;
+      font-size: 30px;
+      opacity: 0.9;
+      cursor: pointer;
+      text-align: center;
+    }
+  }
+  .s2 .text:hover {
+    .show {
+      width: 250px;
+      height: 250px;
+      background-color: black;
+      visibility: visible;
+      font-size: 20px;
+      position: relative;
+      z-index: 1000;
+      color: white;
+      font-family: Montserrat;
+      font-size: 30px;
+      opacity: 0.9;
+      cursor: pointer;
+      text-align: center;
+    }
+  }
+
+  .s3 .text {
+    padding: 0;
+    text-align: center;
+  }
+
+  .s3 .text p {
+    font-size: 15px;
+    width: 100%;
+  }
+  .s3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .s3 .picture {
+    padding: 0;
+  }
+
+  .s3 img {
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .futr {
+    overflow: hidden;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .futr ul {
+    padding-bottom: 20px;
+  }
+}
